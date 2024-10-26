@@ -1,0 +1,18 @@
+* {
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+    background-image: url(images/space-galaxy-background.jpg);
+    background-size: cover;
+}
+
+div div a {
+    background: #6ce5f0;
+    color: #000;
+}
+
+footer h6 {
+    color: #000;
+}
