@@ -5,8 +5,23 @@
 
 main {
     height: 100vh;
-    background-image: url(images/space-galaxy-background.jpg);
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.70), 
+            rgba(0, 0, 0, 0.70)
+            ),
+        url(images/space.jpg);
     background-size: cover;
+}
+
+.background-circle {
+    height: 150vh;
+    width: 88vw;
+    position: fixed;
+    top: -8vh;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: linear-gradient(50deg, rgba(255,255,255,0.025) 70%, rgba(197,202,233,1) 85%);
 }
 
 .astronaut {
@@ -23,7 +38,16 @@ nav {
     padding: 4.5vh 4.5vw 0;
 }
 
-main > div {
+nav img {
+    height: 65px;
+    width: auto;
+}
+
+nav li {
+    display: inline-block;
+}
+
+main > section {
     position: absolute;
     bottom: 16vh;
     left: 4.5vw;
@@ -32,7 +56,6 @@ main > div {
 main h1 {
     font-size: 72px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 11px;
 }
