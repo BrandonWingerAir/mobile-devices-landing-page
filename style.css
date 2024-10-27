@@ -1,3 +1,7 @@
+:root {
+    --leftPadding: 5.5vw;
+}
+
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
@@ -15,8 +19,8 @@ main {
 }
 
 .background-circle {
-    height: 150vh;
-    width: 88vw;
+    height: 170vh;
+    width: 92vw;
     position: fixed;
     top: -8vh;
     border-top-right-radius: 50%;
@@ -28,8 +32,8 @@ main {
     position: fixed;
     height: 74vh;
     width: auto;
-    right: 17.5vw;
-    top: 17.5vh;
+    right: 15vw;
+    top: 14vh;
     animation: float 9s ease-in-out infinite;
 }
 
@@ -38,7 +42,7 @@ main {
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-5vh);
+		transform: translatey(8vh);
 	}
 	100% {
 		transform: translatey(0px);
@@ -49,7 +53,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 4.4vh;
-    padding-left: 5.5vw;
+    padding-left: var(--leftPadding);
 }
 
 nav img {
@@ -96,7 +100,7 @@ nav i:last-of-type {
 main > section {
     position: absolute;
     bottom: 16vh;
-    left: 5.4vw;
+    left: var(--leftPadding);
 }
 
 main h1 {
@@ -137,6 +141,7 @@ main p:last-of-type {
 
 /* Footer Section */
 footer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
