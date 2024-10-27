@@ -7,7 +7,7 @@
     color: #fff;
 }
 
-main {
+.hero-section {
     height: 100vh;
     background: 
         linear-gradient(
@@ -97,25 +97,25 @@ nav i:last-of-type {
 }
 
 /* Hero Section */
-main > section {
+.hero-section > section {
     position: absolute;
     bottom: 16vh;
     left: var(--leftPadding);
 }
 
-main h1 {
+.hero-section h1 {
     font-size: 72px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 11px;
 }
 
-main h1:last-of-type {
+.hero-section h1:last-of-type {
     font-weight: 500;
     margin-bottom: 32px;
 }
 
-main p {
+.hero-section p {
     font-size: 19px;
     line-height: 23px;
     max-width: 32vw;
@@ -123,7 +123,7 @@ main p {
     margin-bottom: 4px;
 }
 
-main p:last-of-type {
+.hero-section p:last-of-type {
     margin-bottom: 59px;
     font-weight: 200;
 }
