@@ -29,13 +29,26 @@ main {
     height: 74vh;
     width: auto;
     right: 17.5vw;
-    top: 14vh;
+    top: 17.5vh;
+    animation: float 9s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5vh);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 4.5vh;
+    padding-top: 4.4vh;
     padding-left: 5.5vw;
 }
 
@@ -44,9 +57,11 @@ nav img {
     width: auto;
 }
 
+/* Navigation Menu */
 nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
 }
 
@@ -58,23 +73,26 @@ nav li {
 nav a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
 
 nav div {
     margin-right: 16.5vw;
+    display: flex;
+    align-items: center;
 }
 
 nav i.fa {
-    font-size: 19px;
+    font-size: 23px;
 }
 
 nav i:last-of-type {
     margin-left: 28px;
 }
 
+/* Hero Section */
 main > section {
     position: absolute;
     bottom: 16vh;
@@ -82,7 +100,7 @@ main > section {
 }
 
 main h1 {
-    font-size: 72px;
+    font-size: 73px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 11px;
@@ -94,22 +112,30 @@ main h1:last-of-type {
 }
 
 main p {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 23px;
-    max-width: 42%;
+    max-width: 32vw;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+main p:last-of-type {
     margin-bottom: 59px;
+    font-weight: 200;
 }
 
 .button {
     position: relative;
     background: #6ce5f0;
     color: #000;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     padding: 10px 40px;
     border-radius: 24px;
 }
 
+/* Footer Section */
 footer h6 {
     color: #000;
 }
