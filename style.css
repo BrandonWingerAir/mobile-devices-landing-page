@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, a, i, span {
     color: #fff;
 }
 
-.hero-section {
+.landing-container {
     height: 100vh;
     background: 
         linear-gradient(
@@ -16,12 +16,14 @@ h1, h2, h3, h4, h5, h6, p, a, i, span {
             ),
         url(images/space.jpg);
     background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 
 .background-circle {
     height: 170vh;
     width: 90vw;
-    position: fixed;
+    position: absolute;
     top: -8vh;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -62,7 +64,7 @@ nav img {
     width: auto;
 }
 
-nav ul {
+ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,33 +99,33 @@ nav i:last-of-type {
 }
 
 /* Hero Section */
-.hero-section > section {
+section {
     position: absolute;
     bottom: 16vh;
     left: var(--leftPadding);
 }
 
-.hero-section h1 {
+h1 {
     font-size: 72px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 11px;
 }
 
-.hero-section h1:last-of-type {
+h1:last-of-type {
     font-weight: 500;
     margin-bottom: 32px;
 }
 
-.hero-section p {
+p {
     font-size: 19px;
     line-height: 23px;
-    max-width: 32vw;
+    width: 32vw;
     font-weight: 500;
     margin-bottom: 4px;
 }
 
-.hero-section p:last-of-type {
+p:last-of-type {
     margin-bottom: 59px;
     font-weight: 200;
 }
@@ -152,4 +154,60 @@ footer {
 
 footer h6 {
     color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+    .landing-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    nav {
+        padding-top: 20px;
+    }
+
+    nav img {
+        width: 56px;
+        height: 56px;
+    }
+
+    nav ul, footer {
+        display: none;
+    }
+
+    nav div {
+        margin-right: 7.2vw;
+    }
+
+    section {
+        top: 117px;
+    }
+
+    h1 {
+        font-size: 27px;
+        margin-bottom: 14px;
+    }
+
+    h1:last-of-type {
+        margin-bottom: 11px;
+    }
+    
+    p {
+        width: 50vw;
+        font-size: 17px;
+        margin-bottom: 11px;
+    }
+
+    p:last-of-type {
+        margin-bottom: 32px;
+    }
+
+    .button {
+        padding: 8px 32px;
+    }
+    
+    .astronaut {
+        right: -39vw;
+        top: 33vh;
+    }
 }
